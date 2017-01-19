@@ -4,6 +4,8 @@
 In your Terminal app, go to the folder where this file is.
 You can easily do that by typing `cd ` (with a trailing space), and then dragging the folder into the terminal.
 
+First, install Elm from [https://guide.elm-lang.org/install.html](https://guide.elm-lang.org/install.html)
+
 Then start elm reactor:
 
 ```sh
