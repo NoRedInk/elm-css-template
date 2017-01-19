@@ -13,8 +13,8 @@ at the bottom of this file that uses `page` and attaches the compiled Elm CSS.
 page : Html msg
 page =
     Html.div [ id Page ]
-        [ Html.div [ class [ NavBar ] ] [ Html.text <| toString <| Css.compile [ css ] ]
-        , Html.p [] [ Html.text "TODO" ]
+        [ Html.div [ class [ NavBar ] ] [ Html.text "navbar text" ]
+        , Html.p [] [ Html.text "paragraph text" ]
         ]
 
 
@@ -49,6 +49,8 @@ css =
         , (.) NavBar
             [ margin zero
             , padding zero
+            , fontSize (px 24)
+            , fontFamily sansSerif
             , children
                 [ li
                     [ (display inlineBlock) |> important
